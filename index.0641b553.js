@@ -2947,11 +2947,11 @@ $parcel$ReactRefreshHelpers$f79a.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _reactRouterDom = require("react-router-dom");
 var _header = require("./components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _body = require("./components/Body");
@@ -2992,33 +2992,39 @@ const AppLayout = ()=>{
         };
         setUserName(data.diffName);
     }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
-        value: {
-            LoggedInUser: userName,
-            setUserName
-        },
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "app",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                    fileName: "src/app.js",
-                    lineNumber: 44,
-                    columnNumber: 7
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
-                    fileName: "src/app.js",
-                    lineNumber: 45,
-                    columnNumber: 7
-                }, undefined)
-            ]
-        }, void 0, true, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.HashRouter), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
+            value: {
+                LoggedInUser: userName,
+                setUserName
+            },
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "app",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                        fileName: "src/app.js",
+                        lineNumber: 46,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                        fileName: "src/app.js",
+                        lineNumber: 47,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/app.js",
+                lineNumber: 45,
+                columnNumber: 5
+            }, undefined)
+        }, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 43,
+            lineNumber: 44,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/app.js",
-        lineNumber: 42,
+        lineNumber: 43,
         columnNumber: 5
     }, undefined);
 };
@@ -3029,12 +3035,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 55,
+            lineNumber: 58,
             columnNumber: 9
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 56,
+            lineNumber: 59,
             columnNumber: 14
         }, undefined),
         children: [
@@ -3042,7 +3048,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 60,
+                    lineNumber: 63,
                     columnNumber: 11
                 }, undefined)
             },
@@ -3050,7 +3056,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 64,
+                    lineNumber: 67,
                     columnNumber: 13
                 }, undefined)
             },
@@ -3058,7 +3064,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 68,
+                    lineNumber: 71,
                     columnNumber: 13
                 }, undefined)
             },
@@ -3066,7 +3072,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurant/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 72,
+                    lineNumber: 75,
                     columnNumber: 13
                 }, undefined)
             },
@@ -3075,17 +3081,17 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
                     fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 76,
+                        lineNumber: 79,
                         columnNumber: 33
                     }, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Grocery, {}, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 76,
+                        lineNumber: 79,
                         columnNumber: 45
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 76,
+                    lineNumber: 79,
                     columnNumber: 13
                 }, undefined)
             }
@@ -3097,7 +3103,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 85,
+    lineNumber: 88,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
