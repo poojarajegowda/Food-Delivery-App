@@ -1,5 +1,5 @@
 # Namaste React
-<!-- 
+
 # parcel
   -dev build
   -local server
@@ -15,5 +15,6 @@
   -Differential bundling - supports older browsers
   -Diagnostic
   -Error Handling
-  -HTTPs -->
-  -Tree Shaking - remove used codes
+  -HTTPs 
+  -Tree Shaking - remove unused codes
+  -Different Dev and production build
