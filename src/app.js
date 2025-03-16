@@ -79,7 +79,8 @@ children:[
 
 }
 
-]);
+],  { basename: "/food-app-delivery-host" } // Set basename here
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter}/>)
