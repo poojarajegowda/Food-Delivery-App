@@ -26394,9 +26394,7 @@ const Body = ()=>{
         fetchData();
     }, []);
     const fetchData = async ()=>{
-        const data = await fetch("https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.9124323&lng=77.57087229999999&str=restaurants&trackingId=7d9b519d-0598-d583-bce4-b5f6a39fcc5f&submitAction=ENTER&queryUniqueId=e910bd49-c203-0ed3-a121-6f0cbab8dfb6", {
-            mode: "no-cors"
-        });
+        const data = await fetch("https://proxyserver-amcq.onrender.com/api/swiggy");
         const json = await data.json();
         // console.log(json);
         const validResto = json.data.cards[1].groupedCard.cardGroupMap.RESTAURANT.cards;
@@ -26409,12 +26407,12 @@ const Body = ()=>{
         children: "Looks like you are offline!!! Check the internet connectivity"
     }, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 42,
+        lineNumber: 41,
         columnNumber: 7
     }, undefined);
     if (listOfResto.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 46,
+        lineNumber: 45,
         columnNumber: 12
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26434,7 +26432,7 @@ const Body = ()=>{
                                 onChange: (e)=>setSearchButton(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 56,
+                                lineNumber: 55,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -26448,13 +26446,13 @@ const Body = ()=>{
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 64,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 55,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26463,7 +26461,7 @@ const Body = ()=>{
                                 children: "UserName"
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 83,
+                                lineNumber: 82,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -26473,13 +26471,13 @@ const Body = ()=>{
                                 onChange: (e)=>setUserName(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 84,
+                                lineNumber: 83,
                                 columnNumber: 8
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 82,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -26491,13 +26489,13 @@ const Body = ()=>{
                         children: "Top rated Resto"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 93,
+                        lineNumber: 92,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 54,
+                lineNumber: 53,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26508,29 +26506,29 @@ const Body = ()=>{
                             resData: resto
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 113,
+                            lineNumber: 112,
                             columnNumber: 15
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                             resData: resto
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 115,
+                            lineNumber: 114,
                             columnNumber: 15
                         }, undefined)
                     }, resto.card.card.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 108,
+                        lineNumber: 107,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 106,
+                lineNumber: 105,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 53,
+        lineNumber: 52,
         columnNumber: 5
     }, undefined);
 };
