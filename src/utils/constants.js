@@ -8,5 +8,5 @@ export const ERROR_URL=
 "https://c8.alamy.com/comp/2B9F3YX/404-error-cat-logo-and-icon-vector-isolated-image-2B9F3YX.jpg"
 
 export const MENU_URL=
-"https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9124323&lng=77.57087229999999&restaurantId="
+"https://proxyserver-amcq.onrender.com/api/swiggy/details/"
 
