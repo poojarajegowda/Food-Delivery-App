@@ -24,7 +24,7 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.9124323&lng=77.57087229999999&str=restaurants&trackingId=7d9b519d-0598-d583-bce4-b5f6a39fcc5f&submitAction=ENTER&queryUniqueId=e910bd49-c203-0ed3-a121-6f0cbab8dfb6"
+      "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.9124323&lng=77.57087229999999&str=restaurants&trackingId=7d9b519d-0598-d583-bce4-b5f6a39fcc5f&submitAction=ENTER&queryUniqueId=e910bd49-c203-0ed3-a121-6f0cbab8dfb6"
     );
     const json = await data.json();
     // console.log(json);
@@ -79,7 +79,7 @@ const Body = () => {
 
         <div>
           <label>UserName</label>
-       <input className="p-2 border-s-black" type="text" 
+       <input className="border border-s-black w-70 bg-gray-200 px-2 py-1 " type="text" 
        value={LoggedInUser}
        onChange={(e)=>
        setUserName(e.target.value)
