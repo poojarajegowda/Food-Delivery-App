@@ -18,7 +18,7 @@ setShowIndex()
         <span> ⌄ </span>
       </div>
 
-      { showItems && <ItemsList key={data.title} items={data.itemCards}  />}
+      { showItems && <ItemsList key={data.title} items={data.itemCards} />}
     </div>
   );
 };
