@@ -27218,7 +27218,7 @@ const RestaurantMenu = ()=>{
             }, undefined),
             categories.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCategoryDefault.default), {
                     data: category?.card?.card,
-                    showItems: index === showIndex && true,
+                    showItems: index === showIndex,
                     setShowIndex: ()=>setShowIndex((preIndex)=>preIndex === index ? null : index)
                 }, category?.card?.card?.title, false, {
                     fileName: "src/components/RestaurantMenu.js",
